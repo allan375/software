@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --titlebar-height: 30px;
+}
+html, body{
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+img{
+  max-width: 100%;
+}
+.bg-gradient{
+  background: linear-gradient(to bottom right, #422EF4, #EB46E0);
+}
+.draggable{
+  -webkit-app-region: drag;
+}
+.no-draggable{
+  -webkit-app-region: no-drag;
+}
+.btn-home{
+  @apply font-montserrat uppercase text-[13px] font-[600] bg-gradient-to-br from-[#3626c9] to-[#da41cf] text-white rounded-lg px-[30px] py-[6px];
+}

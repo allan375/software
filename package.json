@@ -1,0 +1,48 @@
+{
+  "name": "saas",
+  "version": "1.0.0",
+  "main": "./main.js",
+  "description": "Sistema de automação comercial",
+  "author": "Allan Pires",
+  "scripts": {
+    "app": "concurrently -k \"npm run electron\" \"npm run frontend\"",
+    "app:build": "npm run clean && npm run frontend:build && npm run electron:build\"",
+    "backend": "cd backend && npm run server",
+    "frontend": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "electron": "wait-on tcp:5173 && cross-env IS_DEV=true electron ./main.js",
+    "electron:build": "electron-builder",
+    "clean": "rimraf app"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^32.2.0",
+    "electron-builder": "^25.1.7",
+    "rimraf": "^6.0.1",
+    "wait-on": "^8.0.1"
+  },
+  "build": {
+    "appId": "com.logisoft.app",
+    "productName": "Logisoft",
+    "files": [
+      "main.js",
+      "preload.js",
+      "frontend/build/**/*"
+    ],
+    "directories": {
+      "output": "app"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "./icon.ico"
+    },
+    "nsis": {
+      "createDesktopShortcut": true,
+      "runAfterFinish": true,
+      "shortcutName": "Logisoft"
+    }
+  }
+}
