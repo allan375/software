@@ -1,15 +1,15 @@
 [
   {
     "route": "boas-vindas",
-    "next_route": "/introducao/financas",
+    "next_route": "/home/introducao/financas",
     "title": "Bem-vindo à Logisoft, seu sistema de automação comercial",
-    "image_location": "images/ilustrativo-3.png",
+    "image_location": "./ilustrativo-3.png",
     "description": "A Logisoft facilita a gestão do seu negócio, oferecendo funcionalidades para cada setor da empresa - como estoque, financeiro, vendas, compras, marketing, RH, gestão de projetos e atendimento ao cliente!",    
     "btn_text": "Próximo"
   },
   {
     "route": "financas",
-    "next_route": "/introducao/comunicacao",
+    "next_route": "/home/introducao/comunicacao",
     "title": "Automatize a emissão de documentos fiscais",
     "image_location": "images/ilustrativo-3.png",
     "description": "Acompanhe de forma eficiente suas despesas e receitas, fluxo de caixa, contas a pagar e receber, projeções orçamentárias e relatórios financeiros, além de manter precisão nos registros através da conciliação bancária.",
@@ -17,7 +17,7 @@
   },
   {
     "route": "comunicacao",
-    "next_route": "/introducao/produtividade",
+    "next_route": "/home/introducao/produtividade",
     "title": "Sistema de chat em tempo real com robô para atendimento online!",
     "image_location": "images/ilustrativo-3.png",
     "description": "Ofereça um atendimento online ágil e eficiente com nosso sistema de chat em tempo real, que inclui um robô inteligente para responder automaticamente a perguntas frequentes e fornecer suporte instantâneo.",
@@ -25,7 +25,7 @@
   },
   {
     "route": "produtividade",
-    "next_route": "/criar-conta",
+    "next_route": "/home/criar-conta",
     "title": "Ferramentas para gestão de projetos e produtividade",
     "image_location": "images/ilustrativo-3.png",
     "description": "Gerencie o fluxo de trabalho, implementando metodologias eficientes para otimizar a produtividade e acompanhar o progresso das tarefas em tempo real. Delegue tarefas organizadamente e defina prioridades claras.",

@@ -15,12 +15,12 @@ export default function Home(){
         </div>
       </div>
 
-      <div className='home-container flex w-[100vw] h-[100vh]'>
-        <div className='home-container-left flex items-center justify-center w-[50%] h-[100%] p-8'>
+      <div id='container' className='flex w-[100vw] h-[100vh]'>
+        <div id='container-content' className='flex items-center justify-center w-[50%] h-[100%] p-10'>
           <Outlet/>
         </div>
 
-        <div className='home-container-right flex flex-col w-[50%] h-[100%] justify-center items-center bg-gradient'>
+        <div id='container-overlay' className='flex flex-col w-[50%] h-[100%] justify-center items-center bg-gradient'>
           <img src={Logo} width={120} alt="" />
         </div>
       </div>
